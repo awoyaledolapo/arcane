@@ -1,0 +1,465 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    min-height: 2400;
+    /* min-width: 80px; */
+}
+
+.nav-bar {
+    display: flex;
+    padding: 20;
+    align-items: center;
+    margin: 25px;
+}
+
+.brand {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+}
+
+
+
+
+
+
+
+
+.first-block {
+    content: "";
+
+    background: url('image/mateusz-butkiewicz-QDcagsjUQOs-unsplash.jpg') no-repeat center center/cover;
+    position: relative;
+
+    width: 80%;
+    height: 42em;
+    margin-left: 10em;
+
+    margin-top: 0;
+
+
+}
+
+.about-us {
+    content: "";
+    background: url('image/about-us-img-3.jpg')no-repeat center center/cover;
+    position: relative;
+    left: 16em;
+    width: 70%;
+    height: 28em;
+    opacity: 1.5;
+    z-index: -1;
+}
+
+.first-block-text {
+    position: relative;
+    top: 11em;
+    left: 19em;
+    color: white;
+}
+
+.first-block-text h1 {
+    font-family: "Fugaz One", sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+    color: rgb(162, 12, 12);
+}
+
+nav {
+    flex: 1;
+    text-align: left;
+    margin-left: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #555;
+}
+
+.fb-btn {
+    background-color: black;
+    color: aliceblue;
+    width: 140px;
+    height: 40px;
+}
+
+.pair {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: 26em;
+    right: 3em;
+}
+
+.col {
+    width: 50px;
+    height: 40px;
+    /* border: 1px solid rgb(231, 224, 224); */
+    text-align: center;
+    padding: 24px;
+    margin-left: 0px;
+
+    /* background-color: white */
+}
+
+.pair-1 {
+    background-color: black;
+    color: white;
+}
+
+.mid-first-text {
+
+    text-align: center;
+    font-size: 120px;
+
+}
+
+.mid-intro {
+    margin-left: 20em;
+    font-size: 15px;
+
+    letter-spacing: 2px;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+
+.mid-intro-text p {
+    margin: 10px;
+}
+
+.mid-intro-text {
+    width: 30em;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    letter-spacing: 2px;
+}
+
+.mid-intro-img {
+    position: relative;
+    bottom: 5em;
+    z-index: -1;
+}
+
+.about-us-text {
+    font-family: "Fugaz One", sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 7em;
+    top: 7em;
+}
+
+.featured {
+    margin: auto;
+    width: 70vw;
+    height: 100vh;
+    position: relative;
+    left: 4em;
+}
+
+.featured-project,
+.featured-text {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+
+
+}
+
+.featured-project-1 {
+    content: "";
+    background: url('image/project4.jpg')no-repeat center center/cover;
+    height: 80vh;
+    width: 60vw;
+    margin-right: 60px;
+
+}
+
+
+
+
+.featured-project-2 {
+    content: "";
+    background: url('image/project5.jpg')no-repeat center center/cover;
+    height: 80vh;
+    width: 60vw;
+    margin-right: 60px;
+}
+
+.featured-project-3 {
+    content: "";
+    background: url('image/project3.jpg')no-repeat center center/cover;
+    height: 80vh;
+    width: 60vw;
+}
+
+.end {
+    position: relative;
+    top: 10em;
+    left: 2em;
+    color: azure;
+}
+
+.start {
+    font-size: 190px;
+    opacity: 0.5;
+    color: azure;
+    position: relative;
+    left: 0.8em;
+}
+
+.bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: relative;
+    left: 6em;
+    margin-top: 5em;
+
+    width: 70em;
+}
+
+.bottom-brand {
+    background-color: black;
+    width: 100px;
+    height: 100px;
+    color: #fcf9f9;
+    padding-top: 20px;
+}
+
+.bottom-links {
+    display: flex;
+    width: 45em;
+
+    padding-top: 30px;
+    justify-content: space-around;
+}
+
+.bottom-btn {
+    height: 35px;
+    width: 150px;
+    color: rgb(252, 249, 245);
+    background-color: black;
+    position: relative;
+    right: 5em;
+    top: 2em;
+}
+
+.bottom-links p {
+    position: relative;
+    right: 5em;
+
+}
+
+/* <!------------MEDIA QUERY ---------> */
+@media only screen and (max-width:767px) {
+    .nav-bar {
+
+        width: 100vw;
+    }
+
+    .nav-item {
+        margin-top: 1em;
+        margin-left: 16em;
+        font-size: 40px;
+        width: 250px;
+    }
+
+    .pair,
+    .mid-first-text,
+    .mid-intro-img {
+        display: none;
+    }
+
+    .first-block {
+        margin-top: 10px;
+        width: 80em;
+        margin-left: 8em;
+        height: 80em;
+
+
+    }
+
+    .fb-btn {
+        position: relative;
+        width: 15em;
+        height: 7em;
+        font-size: x-large;
+        top: 4em;
+    }
+
+
+
+
+    .first-block-text {
+        left: 7em;
+    }
+
+    .first-block-text .fbt-1 {
+        font-size: 10em;
+        color: rgb(12, 9, 9);
+    }
+
+    .first-block-text .fbt-2 {
+        font-size: 3em;
+        width: 15em;
+        color: rgb(137, 12, 12);
+    }
+
+    /* br { */
+    /* display: none; */
+    /* } */
+
+    .mid-intro-text {
+        width: 190em;
+        margin-top: 120px;
+        font-size: 70px;
+
+    }
+
+    .mid-intro {
+        width: 1250px;
+        margin-left: 10em;
+    }
+
+    .mid-intro-text p {
+        margin-top: 40px;
+    }
+
+    .about-us {
+        width: 80em;
+        left: 6.5em;
+
+        height: 80em;
+    }
+
+    .about-us-text {
+        font-size: 60px;
+        margin-top: 5em;
+        left: 2em;
+
+    }
+
+    /* .about-us-text h1{ */
+    /* margin-top: 120em; */
+    /* } */
+    .featured {
+        width: 100vw;
+        margin-top: 20px;
+
+        position: relative;
+        left: 15em;
+    }
+
+    .ft-btn {
+        position: relative;
+        top: 73em;
+        width: 30em;
+        font-size: 30px;
+        left: 1em;
+    }
+
+    .featured-project,
+    .featured-text {
+        flex-direction: column;
+    }
+
+    .featured-project-1 {
+        height: 90vh;
+        width: 250vw;
+        margin: 10px;
+
+    }
+
+    .featured-project-2 {
+        height: 90vh;
+        width: 250vw;
+        margin: 15px;
+
+    }
+
+    .featured-project-3 {
+        height: 90vh;
+        width: 250vw;
+        margin: 15px;
+
+    }
+
+    .featured-text h1 {
+        font-size: 120px;
+        margin-top: 40px;
+    }
+
+    .start {
+        display: none;
+    }
+
+    .end {
+        font-size: 40px;
+    }
+
+    .bottom {
+        top: 130em;
+        flex-direction: column;
+        background-color: rgb(222, 226, 226);
+       left:2em;
+        width:90em;
+    }
+
+    .bottom-links {
+        flex-direction: column;
+        text-align: center;
+        width: 60%;
+        height: 90vh;
+        padding-bottom: 4em;
+    
+
+
+    }
+
+    .bottom-links p {
+        color: rgb(23, 21, 21);
+        /* background-color: black; */
+        font-size: 40px;
+        left: 6em;
+        justify-content: space-around;
+
+    }
+
+    .bottom-brand {
+        font-size: 40px;
+        width: 10em;
+
+
+        position: relative;
+        left: 12em;
+        top: 1em;
+        padding: 40px;
+        height: 5em;
+    }
+
+    .bottom-btn {
+        
+        font-size: 40px;
+    width: 17em;
+    height: 5em;
+    left: 8.3em;
+    top: 0;
+
+        
+    }
+}
